@@ -374,7 +374,52 @@
 
 		<div class="backdrop is-hidden" data-modal>
 			<div class="modal">
-				
+				<div class="modal-form-box">
+                    <p class="modal-title">Leave your contacts and we will call you back</p>
+                    <form class="form">
+                        <div class="modal-form-field">
+                            <label class="modal-form-label" for="user-name">Name</label>
+                            <div class="modal-icons">
+                            <input class="modal-form-input" type="text" name="user-name" id="user-name">
+                                <svg class="modal-svg-user">
+                                    <use href="./img/icons.svg#icon-user-name"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="modal-form-field">
+                            <label class="modal-form-label" for="tel" class="form-label">Phone</label>
+                            <div class="modal-icons">
+                            <input class="modal-form-input" type="tel" name="tel" id="tel">
+                                <svg class="modal-svg-phone">
+                                    <use href="./img/icons.svg#icon-phone"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="modal-form-field">
+                            <label class="modal-form-label" for="mail">Email</label>
+                            <div class="modal-icons">
+                            <input class="modal-form-input" type="email" name="mail" id="mail">
+                                <svg class="modal-svg-mail">
+                                    <use href="./img/icons.svg#icon-mail"></use>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="modal-form-textarea">
+                            <label class="modal-form-label" for="comment">Comment</label>
+                            <textarea class="modal-textarea" name="comment" id="comment" rows="10" placeholder="Text input"></textarea>
+                        </div>
+                        <div class="modal-form-checkbox">
+                            <input type="checkbox" name="policy" id="policy">
+                            <label class="label-checkbox" for="policy"> <p class="content-checkbox">I accept the terms and conditions of the <a href="#">Privacy Policy</a></p></label>
+                        </div>
+
+                        <div class="modal-form-button">
+                            <button class="modal-button-send" type="submit">Send</button>
+                        </div>
+                    </form>
+                </div>
+
 				<button data-modal-close type="button" class="modal-button">
 					<svg class="modal-icon">
 						<use href="./img/icons.svg#icon-close-back"></use>
